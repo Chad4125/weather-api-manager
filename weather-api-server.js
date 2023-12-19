@@ -42,7 +42,7 @@ const fetchWeatherData = async () => {
    const base_time = currentTimeInKorea.substring(9);
 
    // Construct the API URL with the current time
-   const apiUrl = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=WLm8yF801DZP%2FnyNRjzZxFL1FugM0JS%2FJxo35T927rUJTTkWqV57Q2UjLQGgKPHsRG6VsKJlxEGJQBSwKNggbg%3D%3D&pageNo=1&numOfRows=1000&dataType=XML&base_date=${base_date}&base_time=${base_time}&nx=55&ny=127`;
+   const apiUrl = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=WLm8yF801DZP%2FnyNRjzZxFL1FugM0JS%2FJxo35T927rUJTTkWqV57Q2UjLQGgKPHsRG6VsKJlxEGJQBSwKNggbg%3D%3D&pageNo=1&numOfRows=1000&dataType=XML&base_date=${base_date}&base_time=${base_time}&nx=92&ny=132`;
 
    // Make the axios.get request
    const response = await axios.get(apiUrl);
